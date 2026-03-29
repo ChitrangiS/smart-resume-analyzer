@@ -1,0 +1,75 @@
+.suggestions {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 28px;
+}
+.suggestions__header {
+  margin-bottom: 20px;
+}
+.suggestions__title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.suggestions__title-icon { font-size: 1.1rem; }
+.suggestions__filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.sug-filter {
+  padding: 5px 12px;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--text-secondary);
+  font-family: var(--font-display);
+  font-size: 0.78rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.sug-filter:hover { background: var(--surface-2); color: var(--text); }
+.sug-filter.active { background: var(--surface-2); color: var(--text); border-color: var(--border-light); }
+.sug-filter.active.high { background: var(--red-dim); color: var(--red); border-color: rgba(248,113,113,0.3); }
+.sug-filter.active.medium { background: var(--yellow-dim); color: var(--yellow); border-color: rgba(251,191,36,0.3); }
+.sug-filter.active.low { background: var(--blue-dim); color: var(--blue); border-color: rgba(96,165,250,0.3); }
+
+.suggestions__list { display: flex; flex-direction: column; gap: 10px; }
+.suggestions__empty { color: var(--text-muted); font-size: 0.875rem; padding: 8px 0; }
+
+.suggestion-item {
+  background: var(--bg-3);
+  border-radius: 0 var(--radius) var(--radius) 0;
+  padding: 14px 18px;
+  animation: fadeUp 0.35s ease both;
+}
+.suggestion-item__meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+.suggestion-item__priority {
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 4px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+.suggestion-item__category {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+.suggestion-item__message {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  line-height: 1.55;
+}
