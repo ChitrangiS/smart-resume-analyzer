@@ -1,7 +1,5 @@
 # ResumeIQ- Smart Resume Analyzer
 
-# 🧠 Smart Resume Analyzer
-
 ## 📌 Overview
 
 **Smart Resume Analyzer** is a web-based application that analyzes resumes and extracts meaningful insights such as skills, keywords, and relevant information. It helps automate the resume screening process, making it faster and more efficient for recruiters and useful for candidates to evaluate their resumes.
